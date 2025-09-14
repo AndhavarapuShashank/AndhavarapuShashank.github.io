@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio - Andhavarapu Shashank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha34-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-color-rgb: 37, 99, 235;
+        }
+
+        body {
+            position: relative;
+            background-color: #f8f9fa;
+        }
+
+        #about.section-card {
+            background-image: linear-gradient(120deg, #f0f4ff 0%, #ffffff 100%);
+        }
+
+        .section-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+        }
+        .navbar-nav .nav-link {
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .text-primary-custom {
+            color: var(--primary-color) !important;
+        }
+        .border-primary-custom {
+             border-color: rgba(var(--primary-color-rgb), 0.4) !important;
+        }
+        .section-title {
+            color: var(--primary-color);
+        }
+
+        .skill-badge {
+            background-color: rgba(var(--primary-color-rgb), 0.1);
+            color: var(--primary-color);
+            border: 1px solid rgba(var(--primary-color-rgb), 0.2);
+        }
+
+        .skill-badge-green {
+            background-color: rgba(22, 163, 74, 0.1);
+            color: #16a34a;
+            border: 1px solid rgba(22, 163, 74, 0.2);
+        }
+        .skill-badge-purple {
+            background-color: rgba(139, 92, 246, 0.1);
+            color: #8b5cf6;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+        }
+        .skill-badge-orange {
+            background-color: rgba(249, 115, 22, 0.1);
+            color: #f97316;
+            border: 1px solid rgba(249, 115, 22, 0.2);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            border-color: #1d4ed8;
+        }
+        
+        .footer-icon {
+            transition: color 0.3s ease;
+        }
+        .footer-icon:hover {
+            color: var(--primary-color) !important;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">Andhavarapu Shashank</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+
+        <section id="about" class="text-center card section-card shadow-sm p-4 p-md-5 mb-5">
+            <div class="card-body d-flex flex-column align-items-center">
+                <img src="https://placehold.co/150x150/E2E8F0/475569?text=Your+Photo" alt="Shashank" class="rounded-circle mb-4 border border-4 border-primary-custom" width="150" height="150">
+                <h1 class="display-4 fw-bold">Andhavarapu Shashank</h1>
+                <p class="fs-5 text-primary-custom fw-medium mb-4">Aspiring Web Developer | UI/UX Designer</p>
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fs-3 fw-semibold mb-3">Reflections / Personal Statement</h2>
+                    <p class="lead text-muted">
+                        A passionate computer science student dedicated to building intuitive and efficient web applications. I am eager to leverage my problem-solving skills and technical expertise to contribute to innovative projects in a collaborative team environment.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="card section-card shadow-sm p-4 p-md-5 mb-5">
+            <div class="card-body">
+                <h2 class="text-center display-6 fw-bold mb-5 section-title">Education</h2>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="p-4 bg-light rounded-3 border h-100">
+                            <p class="text-muted mb-1">2023 - 2027</p>
+                            <h3 class="fs-4 fw-semibold">Bachelor of Technology in Computer Science</h3>
+                            <p class="text-primary-custom fs-6">Indian Institute of Information Technology Sricity, Andhra Pradesh</p>
+                            <p class="text-muted mt-2 small">Relevant coursework: Data Structures, Algorithms, Web Development, Database Management, Artificial Intelligence.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-4 bg-light rounded-3 border h-100">
+                            <p class="text-muted mb-1">2021 - 2023</p>
+                            <h3 class="fs-4 fw-semibold">Intermediate</h3>
+                            <p class="text-primary-custom fs-6">Tirumal Junior College, R.Tallavalasa, Andhra Pradesh</p>
+                            <p class="text-muted mt-2 small">Physics, Chemistry and Mathematics stream.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="card section-card shadow-sm p-4 p-md-5 mb-5">
+            <div class="card-body">
+                <h2 class="text-center display-6 fw-bold mb-5 section-title">Skills</h2>
+                <div class="row g-3 text-center">
+                    <div class="col-md-4 col-lg-3"><div class="skill-badge p-3 rounded fw-medium">HTML5 & CSS3</div></div>
+                    <div class="col-md-4 col-lg-3"><div class="skill-badge-green p-3 rounded fw-medium">JavaScript (ES6+)</div></div>
+                    <div class="col-md-4 col-lg-3"><div class="skill-badge-purple p-3 rounded fw-medium">React.js</div></div>
+                    <div class="col-md-4 col-lg-3"><div class="skill-badge-orange p-3 rounded fw-medium">Node.js</div></div>
+                    <div class="col-md-4 col-lg-3"><div class="skill-badge p-3 rounded fw-medium">Python</div></div>
+                    <div class="col-md-4 col-lg-3"><div class="skill-badge-green p-3 rounded fw-medium">SQLite</div></div>
+                    <div class="col-md-4 col-lg-3"><div class="skill-badge-purple p-3 rounded fw-medium">C++</div></div>
+                    <div class="col-md-4 col-lg-3"><div class="skill-badge-orange p-3 rounded fw-medium">Git & GitHub</div></div>
+                    <div class="col-md-4 col-lg-3"><div class="skill-badge p-3 rounded fw-medium">Bootstrap</div></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience" class="card section-card shadow-sm p-4 p-md-5 mb-5">
+            <div class="card-body">
+                <h2 class="text-center display-6 fw-bold mb-5 section-title">Work Experience & Projects</h2>
+                
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-5">
+                        <img src="./auto-customiser-screenshot.png" alt="Auto Customiser Project Screenshot" class="rounded-3 shadow-sm img-fluid">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="fs-2 fw-semibold">Auto Customiser</h3>
+                        <p class="text-primary-custom my-2">Group Project | Web Development</p>
+                        <p class="text-muted mb-3">As a key member of this group project, I contributed to both front-end and back-end development. My responsibilities included implementing core JavaScript functionality, assisting with back-end logic, and taking an active role in the UI/UX design process by creating initial designs and providing creative direction to the team.</p>
+                        <div class="mb-4">
+                            <span class="badge skill-badge-purple p-2 me-1">React</span>
+                            <span class="badge skill-badge p-2 me-1">Bootstrap</span>
+                        </div>
+                        <a href="https://github.com/aniketh-shrivastav/ffsd-project" target="_blank" rel="noopener noreferrer" class="fw-medium text-primary-custom">View on GitHub <i class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <div>
+                    <h3 class="fs-2 fw-semibold">Sparrow Search Algorithm Improvement</h3>
+                    <p class="text-primary-custom my-2">Group Project | Research & Development</p>
+                    <p class="text-muted mb-3">Contributed to a research-oriented group project focused on improving the performance and efficiency of the Sparrow Search Algorithm. My role involved [mention your specific role, e.g., analyzing data, implementing core logic, testing performance benchmarks].</p>
+                    <div class="mb-4">
+                        <span class="badge skill-badge-green p-2 me-1">Python</span>
+                        <span class="badge skill-badge-orange p-2 me-1">Algorithms</span>
+                         <span class="badge skill-badge p-2 me-1">Data Analysis</span>
+                    </div>
+                    <a href="https://github.com/AndhavarapuShashank/improved-saparrow_search_algorithm.github.io" class="fw-medium text-primary-custom">View on GitHub <i class="bi bi-arrow-right-short"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="card section-card shadow-sm p-4 p-md-5 mb-5" >
+            <div class="card-body">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <h2 class="text-center fw-bold mb-4 section-title">Achievements & Awards</h2>
+                        <ul class="list-group list-group-flush">
+                             <li class="list-group-item text-muted">No achievements listed yet.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="text-center fw-bold mb-4 section-title">Extracurricular & Volunteering</h2>
+                        <div class="p-4 bg-light rounded-3 border h-100">
+                            <p class="text-muted mb-1">2023 - Present</p>
+                            <h3 class="fs-5 fw-semibold">Blood Donation Campaign</h3>
+                            <p class="text-muted mt-2 small">Organized a blood donation campaign to raise awareness and support blood donation efforts. Donated Blood to Save Lives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="card section-card shadow-sm p-4 p-md-5 mb-5 text-center">
+             <div class="card-body">
+                <h2 class="display-6 fw-bold mb-3 section-title">Resume & References</h2>
+                <p class="lead text-muted mb-4 col-lg-8 mx-auto">Click the button below to download a PDF version of my resume. References are available upon request.</p>
+                <a href="./Web_Developer_resume.pdf" class="btn btn-primary btn-lg px-5" download>Download Resume</a>
+             </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="display-6 fw-bold mb-3">Get In Touch</h2>
+            <p class="lead text-white-50 mb-4 col-lg-7 mx-auto">I'm currently open to new opportunities. Feel free to reach out via email or connect with me on social media.</p>
+            <a href="mailto:shashank.a23@iiits.in" class="fs-5 text-primary-custom">shashank.a23@iiits.in</a>
+            <div class="mt-4">
+                <a href="https://www.linkedin.com/in/andhavarapu-shashank-004b63306/" target="_blank" rel="noopener noreferrer" class="text-white-50 footer-icon mx-2 fs-4" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/AndhavarapuShashank" target="_blank" rel="noopener noreferrer" class="text-white-50 footer-icon mx-2 fs-4" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="mailto:shashank.a23@iiits.in" class="text-white-50 footer-icon mx-2 fs-4" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+            <hr class="my-4 border-secondary">
+            <p class="text-white-50 small">&copy; 2025 Andhavarapu Shashank. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha34-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
